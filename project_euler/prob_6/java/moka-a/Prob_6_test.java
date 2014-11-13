@@ -1,6 +1,12 @@
-//소수를 크기 순으로 나열하면 2, 3, 5, 7, 11, 13, ... 과 같이 됩니다.
+//1부터 10까지 자연수를 각각 제곱해 더하면 다음과 같습니다 (제곱의 합).
 //
-//이 때 10,001번째의 소수를 구하세요.
+//12 + 22 + ... + 102 = 385
+//1부터 10을 먼저 더한 다음에 그 결과를 제곱하면 다음과 같습니다 (합의 제곱).
+//
+//(1 + 2 + ... + 10)2 = 552 = 3025
+//따라서 1부터 10까지 자연수에 대해 "합의 제곱"과 "제곱의 합" 의 차이는 3025 - 385 = 2640 이 됩니다.
+//
+//그러면 1부터 100까지 자연수에 대해 "합의 제곱"과 "제곱의 합"의 차이는 얼마입니까?
 
 package test;
 
@@ -12,36 +18,32 @@ import org.junit.Test;
 
 public class Prob_6_test {
 	
-	private Prob_6_solve mProb_6_solve;
+	private Prob_6_solve mProv_7_solve;
 	
 	@Before
 	public void setUp() {
 		
-		mProb_6_solve = new Prob_6_solve();
+		mProv_7_solve = new Prob_6_solve();		
 	}
 	
 	@Test
-	public void testCheckPrime() {
+	public void testPowerSum() {
 		
-		assertTrue( mProb_6_solve.checkPrime(7) );
-		assertTrue( mProb_6_solve.checkPrime(2) );
-		assertTrue( mProb_6_solve.checkPrime(19) );
+		assertEquals( "제곱합", 385, mProv_7_solve.powerSum(10) );
+		assertEquals( "제곱합", 338350, mProv_7_solve.powerSum(100) );
 	}
 	
 	@Test
-	public void testFindPrimeArray() {
+	public void testSumPower() {
 		
-		assertEquals( 10, mProb_6_solve.findPrimeArray(10).size() );
-		assertEquals( 20, mProb_6_solve.findPrimeArray(20).size() );
-		assertEquals( 100, mProb_6_solve.findPrimeArray(100).size() );
-		assertEquals( 1000, mProb_6_solve.findPrimeArray(1000).size() );
-//		assertEquals( 10001, mProb_6_solve.findPrimeArray(10001).size() );
+		assertEquals( "합제곱", 3025, mProv_7_solve.sumPower(10) );
+		assertEquals( "합제곱", 25502500, mProv_7_solve.sumPower(100) );
 	}
 	
 	@Test
 	public void testResult() {
 		
-		assertEquals( 104743, (int) mProb_6_solve.findPrimeArray(10001).get(10000) );
+		assertEquals( "100의 제곱합과 합제곱 차이", 25164150, mProv_7_solve.result(100) );
 	}
 
 }

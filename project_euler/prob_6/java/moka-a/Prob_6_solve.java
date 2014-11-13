@@ -1,32 +1,37 @@
 package main;
 
-import java.util.ArrayList;
-
 public class Prob_6_solve {
-	
-	public boolean checkPrime(long num) {
+
+	public int powerSum(int num) {
 		
-		for ( long i = 2 ; i <= num ; i ++ ) {
+		int result = 0;
+		for( int i = 1 ; i <= num ; i++ ) {
 			
-			if ( num % i == 0 ) {
-				if ( i == num ) return true;
-				else return false;
-			}	
+			result += i*i;
 		}
-		return false;
+		
+		return result;
 	}
 
-	public ArrayList<Integer> findPrimeArray(int num) {
+	public int sumPower(int num) {
 		
-		ArrayList<Integer> primeArray = new ArrayList<Integer>();
+		int result = 0;
 		
-		for ( int i = 1 ; ; i++ ) {
+		for( int i = 1 ; i <= num ; i++ ) {
 			
-			if( checkPrime(i) ) primeArray.add(i);
-			if( primeArray.size() >= num ) break;
+			result += i;
 		}
+		return result*result;
+	}
+	
+
+	public int result(int num) {
+
+		int result = 0;
 		
-		return primeArray;
+		result = sumPower(num) - powerSum(num);
+		
+		return result;
 	}
 
 }
