@@ -30,6 +30,22 @@ class ThreeOrFiveMultiple{
         }
         return sum
     }
+    
+    // Closure 연습
+    func sumThreeOrFiveMultipeC(n: Int) -> ( () -> Int){
+        var sum = 0
+        
+        func result() -> Int {
+            for i in 1..<n {
+                if isThreeOrFive(i) {
+                    sum += i
+                }
+            }
+            return sum
+        }
+        return result
+    }
+    
 }
 
 class ThreeOrFiveMultipleSpec: QuickSpec {
@@ -59,6 +75,7 @@ class ThreeOrFiveMultipleSpec: QuickSpec {
                 
                 it("less than 1000"){
                     expect(multiple!.sumThreeOrFiveMultipe(1000)).to(equal(233168))
+                    expect(multiple!.sumThreeOrFiveMultipeC(1000)).to(equal(233168))
                 }
             }
         }
