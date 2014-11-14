@@ -8,7 +8,7 @@
  
 #### 이대명
 - Java
-    - [문제 5번 풀이 완료](https://github.com/GpleLab/training/tree/prob-5-java-moka-a/project_euler/prob_5/java/moka-a)  1시간 30분
+    - [문제 5번 풀이 완료](https://github.com/GpleLab/training/blob/master/project_euler/prob_5/java/moka-a)  1시간 30분
 - 회고 : 어떻게 풀어야 할지 풀이 법이 한참동안 떠오르지 않아서 오래 끌었다.
 		junit 테스트에서 ArrayList 의 테스트 하는게 어려움이 있다.
 
@@ -16,14 +16,14 @@
  
 #### 이대명
 - Java
-    - [문제 6번 풀이 완료](https://github.com/GpleLab/training/tree/prob-5-java-moka-a/project_euler/prob_6/java/moka-a) 30분
+    - [문제 6번 풀이 완료](https://github.com/GpleLab/training/blob/master/project_euler/prob_6/java/moka-a) 30분
 - 회고 : 이번 문제에는 소수구하는거 였는데, 소수관련 문제 3문제 째 나와서 수월하게 풀수있었다.
 
 ### 2014/11/13
  
 #### 이대명
 - Java
-    - [문제 7번 풀이 완료](https://github.com/GpleLab/training/tree/prob-7-java-moka-a/project_euler/prob_7/java/moka-a) 30분
+    - [문제 7번 풀이 완료](https://github.com/GpleLab/training/blob/master/project_euler/prob_7/java/moka-a) 30분
 - 회고 : 이번문제는 단순 계산 문제라서 쉬웠다. 숫자도 큰것이 나올까 걱정햇는데 그런게 아니었다.
 
 #### 조재우
@@ -37,3 +37,8 @@
 - Java
     - [문제 1번 풀이 완료](https://github.com/GpleLab/training/tree/prob-1-java-ybh/project_euler/prob_1/java/ybh) 1시간
 - 회고 : 문제 자체는 쉬웠지만 ItelliJ에서 테스트 환경 설정하고 하는데 조금 헤멧다. 아직은 JUnit에 조금 익숙하지 않은 느낌이다.
+
+#### 이대명
+- Java
+    - [문제 7번 풀이 완료](https://github.com/GpleLab/training/blob/master/project_euler/prob_7/java/moka-a) 1시간
+- 회고 : 이번문제에서 가장큰 핵심은 데이터를 파싱하는 것인거 같다. 이번문제에서는 엔터키 쳐져있는 것을 한줄로 다 만들어서 String 값으로 받아서 데이터를 파싱하였다. 그거 말고는 최대값 찾는 문제 이다.
