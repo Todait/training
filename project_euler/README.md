@@ -47,6 +47,13 @@
 - Swift
     - **문제 2번 풀이 완료** 31분
 - 회고 : 어제는 iOS 프로젝트로 만들어서 테스트 할때마다 iOS 시뮬레이터가 켜지는 불상사(?)가 있엇는데 OSX 커맨드라인으로 만들고 다시 테스트 프로젝트 임포트 하니 테스트만 실행하는 것이 가능하게 되었다. 아직 [Quick](https://github.com/Quick/Quick) 에서 제공하는 [Nimble](https://github.com/Quick/Nimble) 매처가 적응이 안된다. 특히 배열 매처는 찾지 못해서 contain(1,2,..) 으로 했는데 이 매처는 그냥 포함 유무만 나타내는 거라서 좀 더 찾아봐야겠다. 피보나치는 굉장히 단순한 문제이지만 ㅎㅎ Swift 로 좀 더 적응기를 가져야겠다!
+ 
+#### 유병한
+- Java
+    - **문제 4번 풀이 완료** 40분
+- 회고 : 
+	- 좀 더 효율적으로 풀 수는 없을까 고민이 되는 문제이다. 반복문을 돌면서 모든 경우의 수를 찾는 방법으로 풀었는데 어떤 규칙이 있지 않을까 좀 더 고민해봐야겠다.
+	- String을 다룰 때 StringBuilder 클래스를 쓰면 좋은 것 같다. 기존에는 단순히 문자열을 이어 붙일 때 append()만 사용했었는데 reverse() 등 유용한 메서드들 많은거 같다.
+	- Math, Collections, Arrays 등과 같이 java에서 기본적으로 제공되는 유틸 클래스 들의 사용법을 익혀 놓아야겠다.
 
-#### [설명](https://github.com/GpleLab/training/tree/master/project_euler/etc)
 
