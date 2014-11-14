@@ -35,5 +35,5 @@
  
 #### 유병한
 - Java
-    - [문제 1번 풀이 완료](https://github.com/GpleLab/) 1시간
+    - [문제 1번 풀이 완료](https://github.com/GpleLab/training/tree/prob-1-java-ybh/project_euler/prob_1/java/ybh) 1시간
 - 회고 : 문제 자체는 쉬웠지만 ItelliJ에서 테스트 환경 설정하고 하는데 조금 헤멧다. 아직은 JUnit에 조금 익숙하지 않은 느낌이다.
