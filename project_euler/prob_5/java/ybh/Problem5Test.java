@@ -1,6 +1,10 @@
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 
 public class Problem5Test {
@@ -16,6 +20,35 @@ public class Problem5Test {
 		assertEquals( 6, Problem5.getLeastCommonMultipleOf( 2, 6 ) );
 		assertEquals( 24, Problem5.getLeastCommonMultipleOf( 6, 8 ) );
 	}
+    
+    @Test
+    public void testRemove1From() throws Exception {
+        
+        assertFalse( Problem5.remove1From( new int[]{1} ).contains( 1 ) );
+        assertFalse( Problem5.remove1From( new int[]{1, 1, 1, 1} ).contains( 1 ) );
+        assertFalse( Problem5.remove1From( new int[]{1, 4, 3, 5, 1, 3, 5, 6, 3} ).contains( 1 ) );
+        assertFalse( Problem5.remove1From( new int[]{4, 3, 5, 3, 5, 6, 3} ).contains( 1 ) );
+    }
+    
+    @Test
+    public void testIsLessThanMax() throws Exception {
+        
+        assertTrue( Problem5.isLessThanMax( 4, Arrays.asList( 1, 3, 5, 3 ) ) );
+        assertTrue( Problem5.isLessThanMax( 1, Arrays.asList( 1, 3, 5, 3 ) ) );
+        
+        assertFalse( Problem5.isLessThanMax( 5, Arrays.asList( 1, 3, 5, 3 ) ) );
+        assertFalse( Problem5.isLessThanMax( 6, Arrays.asList( 1, 3, 5, 3 ) ) );
+    }
+    
+    @Test
+    public void testDivide() throws Exception {
+        
+        assertTrue( Problem5.divide( Arrays.asList( 3, 54, 1, 23 ), 3 ) );
+        assertTrue( Problem5.divide( Arrays.asList( 3, 54, 1, 23 ), 1 ) );
+        
+        assertFalse( Problem5.divide( Arrays.asList( 3, 54, 1, 23 ), 5 ) );
+        assertFalse( Problem5.divide( Arrays.asList( 3, 54, 1, 23 ), 55 ) );
+    }
 
 	@Test
 	public void testGetLeastCommonMultipleOf2() throws Exception {

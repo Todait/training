@@ -59,8 +59,8 @@ public class Problem5 {
 
 		return result;
 	}
-
-	private static ArrayList<Integer> removeOneFrom( int[] nums ) {
+    
+    public static ArrayList<Integer> remove1From( int[] nums ) {
 
 		ArrayList<Integer> newNums = new ArrayList<Integer>();
 
@@ -72,8 +72,8 @@ public class Problem5 {
 
 		return newNums;
 	}
-
-	private static boolean isLessThanMax( int num, ArrayList<Integer> nums ) {
+    
+    public static boolean isLessThanMax( int num, List<Integer> nums ) {
 
 		if( 0 == nums.size() ) {
 			return false;
@@ -81,8 +81,8 @@ public class Problem5 {
 
 		return (Collections.max( nums ) > num);
 	}
-
-	private static boolean divide( ArrayList<Integer> nums, int divisor ) {
+    
+    public static boolean divide( List<Integer> nums, int divisor ) {
 
 		boolean result = false;
 
